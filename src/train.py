@@ -122,4 +122,4 @@ for epoch in epoch_range:
         result = info['reward_sum']
         rews.append(result)
 
-torch.save(dynamics_model.state_dict(), 'pets_checkpoint.pth')
+torch.save(dynamics_model.state_dict(), 'checkpoint.pth')
