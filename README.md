@@ -24,5 +24,5 @@ To run the code, do the following:
 python -m src.train
 ```
 
-The resulting policy can be visualized in the notebook 'visualization.ipynb'
+
 
