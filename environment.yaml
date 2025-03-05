@@ -1,0 +1,26 @@
+channels:
+    - anaconda
+    - conda-forge
+    - pytorch
+    - menpo
+dependencies:
+    - python=3.10
+    - pip
+    - pytorch
+    - gym-box2d
+    - glew
+    - mesalib
+    - glfw3
+    - pip:
+        - numpy<=1.24.0
+        - scipy
+        - loguru
+        - enlighten
+        - mujoco-py
+        - matplotlib
+        - jupyterlab
+        - ipywidgets
+        - widgetsnbextension
+        - cython<3
+        - einops
+        - git+https://github.com/Farama-Foundation/d4rl@master#egg=d4rl
