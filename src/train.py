@@ -10,7 +10,7 @@ from src.mbrl_sampler import MBRLSampler
 
 from torch.optim import Adam
 from src.model import EnsembleDynamicsModel
-from src.utils import get_device, set_seed
+from src.utils import get_device, set_seed, demo_policy, save_frames_as_gif
 from tqdm import trange
 from loguru import logger
 import gym
@@ -123,3 +123,8 @@ for epoch in epoch_range:
         rews.append(result)
 
 torch.save(dynamics_model.state_dict(), 'checkpoint.pth')
+
+frames, total_reward = demo_policy(policy, environment_name=ENVIRONMENT_NAME, steps=200)
+gif_path = save_frames_as_gif(frames, method_name='pets')
+print('Total Reward:', total_reward)
+
