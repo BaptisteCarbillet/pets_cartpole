@@ -3,7 +3,7 @@
 
 This repo contains an implementation of the algorithm PETS for model based reinforcement learning. The implementation is based on the paper [PETS: Probabilistic Ensembles with Trajectory Sampling](https://arxiv.org/abs/1805.12114) by Chua et al. 
 
-It learns a good policy for the CartPole environment using only 26 demonstrations.
+It learns a policy for the CartPole environment using only 26 demonstrations.
 
 
 ### MuJoCo installation
